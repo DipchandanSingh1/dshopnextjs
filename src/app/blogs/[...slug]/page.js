@@ -1,8 +1,10 @@
 import React from 'react'
 
-const blogspage = () => {
+const blogspage = async({params}) => {
+const slug=await params.slug;
+console.log(slug)
   return (
-    <div>blogspage</div>
+    <div>slug page</div>
   )
 }
 
